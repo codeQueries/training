@@ -9,8 +9,8 @@ node('jenkins-slave') {
             cd conan-io
             git clone https://github.com/conan-io/training.git
             cd training
-            cd docker_environment            
-            podman run -dt
+            cd docker_environment   
+            docker-compose up -d
             podman exec -it conan-training bash
         """)
     }
