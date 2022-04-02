@@ -10,7 +10,7 @@ node('jenkins-slave') {
             git clone https://github.com/conan-io/training.git
             cd training
             cd docker_environment            
-            podman run -dt -p 
+            podman run -dt
             podman exec -it conan-training bash
         """)
     }
