@@ -12,8 +12,8 @@ node('jenkins-slave') {
             cd training
             cd docker_environment   
             
-            podman run dir:./artifactory-training -dt- p 8082:8082/tcp
-            podman run dir:./conan-training -dt 
+            podman run dir:artifactory-training/ -dt- p 8082:8082/tcp
+            podman run dir:conan-training/ -dt 
             
             podman exec -it conan-training bash
         """)
