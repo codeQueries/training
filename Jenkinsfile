@@ -2,7 +2,6 @@ node('jenkins-slave') {
     stage('conan-io-training') {
         sh(script: """
             
-            apt-get -y install buildah
             curl -o /usr/local/bin/podman-compose https://raw.githubusercontent.com/containers/podman-compose/devel/podman_compose.py
             chmod +x /usr/local/bin/podman-compose
             podman version
