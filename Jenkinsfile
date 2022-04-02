@@ -2,8 +2,8 @@ node('jenkins-slave') {
     stage('conan-io-training') {
         sh(script: """
             
-            curl -o ~/.local/bin/podman-compose https://raw.githubusercontent.com/containers/podman-compose/devel/podman_compose.py \
-                && chmod +x ~/.local/bin/podman-compose    
+            sudo curl -o ~/.local/bin/podman-compose https://raw.githubusercontent.com/containers/podman-compose/devel/podman_compose.py \
+                && sudo chmod +x ~/.local/bin/podman-compose    
                 
             podman-compose version
             echo "cloning conan-io-training Git"
