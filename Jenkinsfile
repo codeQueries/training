@@ -5,7 +5,7 @@ node('jenkins-slave') {
             
             podman version
             
-            podman-compose version
+            podman-compose --help
             echo "cloning conan-io-training Git"
             mkdir conan-io
             cd conan-io
