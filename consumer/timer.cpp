@@ -2,7 +2,7 @@
 #include <Poco/Thread.h>
 #include <Poco/Stopwatch.h>
 #include <boost/regex.hpp>
-#include "hello"
+#include "hello.h"
 
 #include <string>
 #include <iostream>
