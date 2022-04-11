@@ -9,3 +9,4 @@ cmake
 [options]
 boost:shared=False
 poco:shared=False
+hello:shared=False
