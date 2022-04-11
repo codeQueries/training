@@ -8,6 +8,7 @@ set(CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR} ${CMAKE_PREFIX_PATH})
 
 find_package(Boost REQUIRED)
 find_package(Poco REQUIRED)
+find_package(Hello REQUIRED)
 
 add_executable(timer timer.cpp)
-target_link_libraries(timer Poco::Poco Boost::Boost)
+target_link_libraries(timer Poco::Poco Boost::Boost hello)
